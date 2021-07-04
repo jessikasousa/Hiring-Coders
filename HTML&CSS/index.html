@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" ,
+        rel="stylesheet">
+    <style>
+        .produt-name{
+            text-align:center;
+            font-weight: 500;
+        }
+        
+        .card-container{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .card{
+            margin: 10px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .description{
+            text-align:justify;
+            margin: 5px 5px;
+            font-size: 15px;
+            
+        }
+
+        .price{
+            font-weight: 800;
+        
+        }
+
+        .buy-button{
+            background-color: #fff;
+            border: 1px solid #000;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 5px 0;
+           
+        }
+
+        .buy-button:hover {
+            cursor: pointer;
+            background-color: rgba(74, 157, 196, 0.5);
+            color: #fff
+            
+        }
+
+        @media (max-width: 700px){
+            .buy-button{
+                width: 100%;                   
+            }
+
+            .card{
+                flex-basis: 100%;
+            }
+            .description{
+                display: none;
+            }
+            img {
+                display: none;
+            }
+        }
+
+        div {
+            border: 1px solid black;
+            width: 200px;
+        }
+
+        img {
+            width: 100px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+
+        <div class="card">
+            <h3 class="product-name">HTML e CSS</h3>
+            <img src="./img/capalivro.jpg" alt="./img/capalivro.jpg">
+            <p class="description">Bem-vindo a uma melhor maneira de aprender HTML & CSS.Se você quer projetar, construir do zero ou ter mais controle sobre um site existente, este livro lhe ajudará a criar conteúdos atrativos e amigáveis. Sabemos que código pode ser um pouco intimidador, mas dê uma olhada e veja como este guia difere dos livros de programação mais tradicionais. Toda as páginas apresentam um novo tópico e maneira simples e visual, com explicações diretas acompanhadas das amostras de código. Você encontrará ajuda em como organizar e projetar as páginas do seu site para que possa criar websites fantásticos e fáceis de usar. Não é necessário ter experiência! <br> ESTE LIVRO É PARA:Web designers e programadores;Editores online e de conteúdo;Times de blogueiros de e-commerce e marketing;Tambem para hobby. VOCÊ APRENDERÁ A:Escrever em HTML5 e CSS3;Estruturar websites;Preparar imagens, áudio, e video;Controlar tipografia e layout.</p>
+            
+            <span class="price">Preço: R$170,52</span>
+        
+            <button class="buy-button">Adicionar ao carrinho</button>
+        </div>
+
+        <div class="card">
+            <h3 class="product-name">Javascript e Jquery</h3>
+            <img src="./img/capalivro2.jpg" alt="./img/capalivro2.jpg">
+            <p class="description">Bem-vindo ao ensino de JavaScript & jQuery. Você é iniciante em JavaScript, ou adicionou scripts a sua página web mas quer entender melhor como tudo funciona? Então este livro é para você. Não mostraremos apenas como ler e escrever em JavaScript, mas também ensinaremos o básico sobre programação de computadores de forma simples e visual. Tudo o que você precisa é entender um pouco sobre HTML e CSS. Este livro ensinará como tornar seus websites mais interativos, atraentes, e funcionais. Isso acontece ao combinar teoria de programação com exemplos que demonstram como o JavaScript e o jQuery são usados em sites populares. De forma rápida, você será capaz de pensar e programar como um profissional</p>
+            
+            <span class="price">Preço: R$162,00</span>
+        
+            <button class="buy-button">Adicionar ao carrinho</button>
+        </div>
+
+        <div class="card">
+            <h3 class="product-name">Websites com PHP</h3>
+            <img src="./img/capalivro3.jpg" alt="./img/capalivro3.jpg">
+            <p class="description">Desenvolvendo Websites com PHP apresenta técnicas de programação fundamentais para o desenvolvimento de sites dinâmicos e interativos. Você aprenderá a desenvolver sites com uma linguagem utilizada em milhões de sites no mundo inteiro. O livro abrange desde noções básicas de programação até a criação e manutenção de bancos de dados, mostrando como são feitas inclusões, exclusões, alterações e consultas a tabelas de uma base de dados.</p>
+            
+            <span class="price">Preço: R$49,52</span>
+        
+            <button class="buy-button">Adicionar ao carrinho</button>
+        </div>
+
+        <div class="card">
+            <h3 class="product-name">Algoritmos</h3>
+            <img src="./img/capalivro4.jpg" alt="./img/capalivro4.jpg">
+            <p class="description">Este livro abrange os principais conceitos de programação de computadores, incluindo a norma ISO 5807:1985 (E) e importantes fundamentos, como entrada, processamento, saída, tipos de dados, variáveis, constantes, operadores aritméticos e expressões aritméticas. Explica tomada de decisão, laços condicional e incondicional, programação com matrizes, técnicas de ordenação e busca, uso de registros e uma maneira de incorporar - em uma única matriz - dados de tipos diferentes. A organização de um programa em sub-rotinas complementa o ensino, abordando procedimentos, funções e passagens de parâmetro. A obra apresenta, ainda, medidas de complexidade, fundamentos de otimalidade e backtracking, bem como ações de busca de padrões em strings.</p>
+            
+            <span class="price">Preço: R$75,00</span>
+        
+            <button class="buy-button">Adicionar ao carrinho</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
