@@ -1,0 +1,58 @@
+const livros = [
+  {
+    id: 1,
+    nome: "Digital Minimalism",
+    autor: "Cal Newport",
+    categoria: "Produtividade",
+    paginas: 254,
+    recomenda: true,
+    leu: true,
+  },
+  {
+    id: 2,
+    nome: "O Senhor dos Aneis",
+    autor: "J. R. R. TOLKIEN",
+    categoria: "Ficção",
+    paginas: 1000,
+    recomenda: false,
+    leu: false,
+  },
+  {
+    id: 3,
+    nome: "Mitologia dos Orixás",
+    autor: "Reginaldo Prandi",
+    categoria: "Mitologia",
+    paginas: 500,
+    recomenda: true,
+    leu: false,
+  },
+  {
+    id: 4,
+    nome: "Cidades do Amanhã",
+    autor: "Peter Hall",
+    categoria: "Arquitetura",
+    paginas: 450,
+    recomenda: true,
+    leu: true,
+  },
+  {
+    id: 5,
+    nome: "Inferno",
+    autor: "Dan Brown",
+    categoria: "Ficção",
+    paginas: 355,
+    recomenda: true,
+    leu: true,
+  },
+  {
+    id: 6,
+    nome: "O Código Da Vinci",
+    autor: "Dan Brown",
+    categoria: "Ficção",
+    paginas: 355,
+    recomenda: true,
+    leu: true,
+  },
+]
+
+module.exports = livros
